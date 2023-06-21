@@ -35,7 +35,7 @@ $(document).ready(function () {
         // Send the AJAX request
         $.ajax({
             type: 'POST',
-            url: 'http://localhost/events/backend/contact',
+            url: 'https://php-backend-087ce0661fec.herokuapp.com/contact',
             data: formData,
             dataType: 'json',
             success: function (response) {

@@ -2,7 +2,7 @@ $(document).ready(function () {
     // Load events from the database and populate the event cards
     function loadEvents() {
         $.ajax({
-            url: 'http://localhost/events/backend/events',
+            url: 'https://php-backend-087ce0661fec.herokuapp.com/events',
             method: 'GET',
             success: function (response) {
                 var events = response;
@@ -49,7 +49,7 @@ $(document).ready(function () {
     // Fetch event details from the server
     function fetchEventDetails(eventId) {
         $.ajax({
-            url: 'http://localhost/events/backend/events/' + eventId,
+            url: 'https://php-backend-087ce0661fec.herokuapp.com/events/' + eventId,
             method: 'GET',
             success: function (response) {
                 var event = response;

@@ -6,10 +6,10 @@ class Config {
 
     private function __construct() {
         try {
-            $dbHost = '127.0.0.1';
-            $dbName = 'repetator';
-            $dbUser = 'root';
-            $dbPassword = 'ademir299';
+            $dbHost = 'db4free.net';
+            $dbName = 'repetatoor';
+            $dbUser = 'danislejla1';
+            $dbPassword = 'danis1233';
 
             $this->connection = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
             $this->connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

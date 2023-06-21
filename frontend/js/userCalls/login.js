@@ -23,7 +23,7 @@ $(document).ready(function () {
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost/events/backend/login',
+            url: 'https://php-backend-087ce0661fec.herokuapp.com/login',
             contentType: 'application/json',
             data: JSON.stringify(data),
             success: function (response) {

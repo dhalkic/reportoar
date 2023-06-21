@@ -4,7 +4,7 @@ class RegistrationRequestBuilder {
     }
 
     setMethod(method) {
-        this.request.open(method, 'http://localhost/events/backend/register', true);
+        this.request.open(method, 'https://php-backend-087ce0661fec.herokuapp.com/register', true);
         return this;
     }
 
